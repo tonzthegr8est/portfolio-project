@@ -1,14 +1,116 @@
-html {
-  box-sizing: border-box;
-  font-family: sans-serif;
+body {
+  font-family: 'Inter', sans-serif;
   margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  gap: 15px;
+  top: 44px;
+  bottom: 0px;
+}
+
+img {
+  padding: 10px;
 }
 
 .nav-menu {
+  color: #28352f;
+  font-weight: 600;
+  font-size: 20px;
   display: flex;
-  flex: 1;
   align-items: center;
-  background: #e5e5e5;
+  max-height: 45px;
+  padding: 10px 24px;
   max-height: 48px;
+  top: 44px;
+  bottom: 0px;
 }
 
+.hamburger-icon {
+  color: #28352f;
+  font-size: 25px;
+  margin-left: auto;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+}
+
+.icon-container > nav {
+  display: none;
+}
+
+.hamburger-icon > button {
+  top: 6px;
+  left: 3px;
+  width: 18px;
+  height: 12px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/mobile-header-illustration.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: auto;
+  height: 90%;
+  margin: 5% auto 5% auto;
+  border: 10px;
+  padding: 64px 24px;
+}
+
+.headline-title {
+  color: #172b4d;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.headline-text {
+  color: #36b37e;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.headline-statement {
+  color: #172b4d;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 2rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-icons > a,
+a:link,
+a:visited {
+  color: #505f79;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .icon-container {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+  }
+}
